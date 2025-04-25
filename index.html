@@ -166,17 +166,46 @@
               170ml, burn time approx 32 hours. This product is handmade in the
               UK.
             </p>
-
-            <button class="buy-button" type="button">
-              <a
-                href="https://www.etsy.com/uk/shop/RumaCandles"
-                target="_blank"
-              ></a
-              >Buy now
-            </button>
+            <a href="https://www.etsy.com/uk/shop/RumaCandles" target="_blank"
+              ><button class="buy-button" type="button">Buy now</button></a
+            >
           </div>
         </div>
       </div>
+      <h2>
+        Enter your email address to subscribe to the Ruma Candles newsletter!
+      </h2>
+      <form id="email-form">
+        <input
+          type="text"
+          placeholder="Enter your email address"
+          autocomplete="off"
+          autofocus="off"
+          id="email-input"
+        />
+        <input type="submit" value="Submit" id="submit-button" />
+      </form>
+
+      <button class="scroll-button">Back to top</button>
     </div>
+
+    <script>
+      function Submit(event) {
+        event.preventDefault;
+        alert("Your email address was submitted");
+      }
+
+      let form = document.querySelector("#email-form");
+      form.addEventListener("submit", Submit);
+
+      let scrollButton = document.querySelector(".scroll-button");
+
+      scrollButton.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
   </body>
 </html>
