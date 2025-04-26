@@ -225,6 +225,14 @@ footer a {
     max-width: 100%;
     padding-bottom: 50px;
   }
+
+  .theme-button {
+    padding: 0;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    font-size: 12px;
+  }
   .content-container {
     margin: 0 auto;
     padding-top: 30px;
