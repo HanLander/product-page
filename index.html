@@ -172,40 +172,39 @@
           </div>
         </div>
       </div>
-      <h2>
-        Enter your email address to subscribe to the Ruma Candles newsletter!
-      </h2>
-      <form id="email-form">
-        <input
-          type="text"
-          placeholder="Enter your email address"
-          autocomplete="off"
-          autofocus="off"
-          id="email-input"
-        />
-        <input type="submit" value="Submit" id="submit-button" />
-      </form>
-
-      <button class="scroll-button">Back to top</button>
     </div>
 
-    <script>
-      function Submit(event) {
-        event.preventDefault;
-        alert("Your email address was submitted");
-      }
+    <h2>
+      Enter your email address to subscribe to the Ruma Candles newsletter!
+    </h2>
+    <div class="form-container">
+      <form id="email-form">
+        <span>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            autocomplete="off"
+            autofocus="off"
+            required
+            id="email-input"
+          />
+        </span>
+        <span>
+          <input type="submit" value="Submit" id="submit-button" />
+        </span>
+      </form>
+    </div>
 
-      let form = document.querySelector("#email-form");
-      form.addEventListener("submit", Submit);
+    <footer>
+      <p>
+        This page was coded by
+        <a href="https://github.com/HanLander/product-page" target="_blank"
+          >Hannah Lander</a
+        >
+      </p>
+    </footer>
+    <button class="scroll-button">Back to top</button>
 
-      let scrollButton = document.querySelector(".scroll-button");
-
-      scrollButton.addEventListener("click", () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
