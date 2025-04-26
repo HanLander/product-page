@@ -30,6 +30,22 @@ nav li.active a {
   cursor: default;
 }
 
+.theme-button {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  padding: 4px;
+  background-color: white;
+  border-radius: 3px;
+  border: none;
+}
+
+.theme-button:hover {
+  background-color: #b1b6b9;
+  color: white;
+  font-weight: 450;
+}
+
 .hero-image {
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,7 +124,7 @@ h2 {
 #submit-button {
   margin-left: 10px;
   border: none;
-  border-radius: 2px;
+  border-radius: 3px;
   background-color: white;
 }
 
@@ -140,6 +156,68 @@ footer {
   margin-top: 30px;
   margin-bottom: 5px;
   font-size: 12px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.dark {
+  background-color: rgb(99, 109, 115, 0.5);
+}
+
+.dark .content-container {
+  background-color: #8f9ea7;
+}
+
+.dark .theme-button {
+  background-color: #b1b6b9;
+  color: whitesmoke;
+}
+
+.dark .theme-button:hover {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.855);
+}
+
+.dark nav a {
+  color: whitesmoke;
+  font-weight: 200;
+}
+
+.dark nav li.active a {
+  color: whitesmoke;
+  text-decoration: underline;
+}
+
+.dark p {
+  color: rgb(231, 225, 225);
+}
+
+.dark .buy-button {
+  background-color: #8f9ea7;
+  color: rgb(231, 225, 225);
+}
+.dark .buy-button:hover {
+  background-color: rgb(99, 109, 115, 0.5);
+  color: rgb(231, 225, 225);
+  font-weight: 450;
+}
+
+.dark h2 {
+  color: white;
+  font-weight: 400;
+}
+
+.dark #submit-button:hover {
+  background-color: white;
+  color: black;
+  font-weight: 450;
+}
+
+.dark footer a {
+  color: whitesmoke;
 }
 
 @media (max-width: 900px) {
