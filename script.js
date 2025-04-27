@@ -13,7 +13,7 @@ themeButton.addEventListener("click", changeTheme);
 
 function Submit(event) {
   event.preventDefault();
-  alert("Your email address was submitted");
+  alert("Thank you for subscribing!");
 }
 
 let form = document.querySelector("#email-form");
